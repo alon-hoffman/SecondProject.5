@@ -1,11 +1,8 @@
-import org.testng.annotations.Test;
+import org.openqa.selenium.By;
 
 public class FirstPage {
-    @Test
     public void clickedRegister() {
-        String classOfWebElement = "seperator-link";
         FindAndClick findAndClick = new FindAndClick();
-        findAndClick.clicked();
+        findAndClick.clickElement(By.className("seperator-link"));
     }
-
 }
