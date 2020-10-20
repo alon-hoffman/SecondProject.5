@@ -6,7 +6,7 @@ public class Page2LoginOrRegister {
         FindAndClick findAndClick= new FindAndClick();
         findAndClick.clickElement(By.className("text-btn"));
         //write alon
-       ClickAndWrite clickAndWrite= new ClickAndWrite();
-       clickAndWrite.writeInElement(By.className("ember-view ember-text-field"),"Alon");
+//       ClickAndWrite clickAndWrite= new ClickAndWrite();
+//       clickAndWrite.writeInElement(By.className("ember-view ember-text-field"),"Alon");
     }
 }
