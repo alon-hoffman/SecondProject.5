@@ -1,14 +1,12 @@
+package TestUtils;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SingletonForInstantiatingWebderiverInstance {
 
+private static ChromeDriver instance = null;
 
-
-
-
-        private static ChromeDriver instance = null;
-
-    private SingletonForInstantiatingWebderiverInstance() { }
+private SingletonForInstantiatingWebderiverInstance() { }
 
     public static ChromeDriver getInstance() {
         if (instance == null) {

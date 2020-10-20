@@ -1,3 +1,5 @@
+package TestOps;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -10,7 +12,7 @@ public class ClickAndWrite {
 
     public void writeInElement(By locator, String text) {
 
-        SingletonForInstantiatingWebderiverInstance.getInstance().findElement(locator).sendKeys(text);
+        TestUtils.SingletonForInstantiatingWebderiverInstance.getInstance().findElement(locator).sendKeys(text);
 
     }
 
