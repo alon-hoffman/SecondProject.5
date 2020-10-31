@@ -1,5 +1,6 @@
 package TestUtils;
 
+import TestOps.Page4PickDD;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -61,8 +62,13 @@ public class TestConductor {
     @Test(priority = 4)
 
     private void test04_register(){
-        TestOps.Page3WrittenPersonalInfo page3= new TestOps.Page3WrittenPersonalInfo();
-        //page3.clickTheBigButton();
+        Page4PickDD page4PickDD= new Page4PickDD();
+        page4PickDD.valuePressed();
+        try {
+            page4PickDD.valuePicked();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     /// more tests
@@ -70,7 +76,7 @@ public class TestConductor {
     @AfterClass
 
     private void finishTest(){
-        driver.quit();
+//        driver.quit();
     }
 
     public void PerformTests()
