@@ -63,12 +63,12 @@ public class TestConductor {
 
     private void test04_register(){
         Page4PickDD page4PickDD= new Page4PickDD();
-        page4PickDD.valuePressed();
-        try {
-            page4PickDD.valuePicked();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        page4PickDD.selectDD();
+    }
+    @Test(priority = 5)
+
+    private void test05_pick(){
+
     }
 
     /// more tests
